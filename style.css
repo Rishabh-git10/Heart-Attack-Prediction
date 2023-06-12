@@ -1,0 +1,15 @@
+h1 {
+    font-family: sans-serif;
+    font-weight: bold;
+    margin: auto;
+}
+.navbar{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 1rem;
+    list-style-type: none;
+    text-decoration: none;
+    color: inherit;
+
+}
