@@ -21,5 +21,5 @@ from hap import views
 urlpatterns = [
     path("admin/", admin.site.urls),
     # path('app/', include('hap.urls')),
-    path("", views.predict_and_recommend, name="predict_and_recommend"),
+    path("hap/", views.predict_and_recommend, name="predict_and_recommend"),
 ]
