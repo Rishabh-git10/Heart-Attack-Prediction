@@ -1,0 +1,24 @@
+body {
+    margin: auto;
+    margin-left: 2rem;
+
+}
+
+h1 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    margin: auto;
+}
+
+.navbar {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 1rem;
+    list-style-type: none;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
