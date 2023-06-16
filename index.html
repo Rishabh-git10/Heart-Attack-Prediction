@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heart Attack Prediction</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Heart Attack Prediction</h1>
+    <div class="navbar">
+        <a href="aboutus.html">About Us</a>
+        <a href="contactus.html">Contact Us</a>
+    </div>
+    <hr/>
+    <p class = "material">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem earum, illo perspiciatis animi ducimus neque repellat magnam molestiae minima, ullam aspernatur alias excepturi atque dolorem blanditiis, provident quisquam dolores? At.</p>
+      
+    <!-- <button type="Risk"   class="button" id="Risk" title="Risk">Check Risk</button> -->
+    <!-- <button type="Tips"   class="button" id="Tips" title="Tips">Get Tips</button> -->
+
+    <form action="submit.php" method="post">
+        <label for="age">Enter your age:</label>
+        <input type="number" id="age" name="age" required><br>
+        
+        <label for="sex">Enter your sex:</label><br>
+        <input type="radio" id="female" name="sex" value="0" required>
+        <label for="female">Female</label><br>
+        <input type="radio" id="male" name="sex" value="1" required>
+        <label for="male">Male</label><br>
+        
+        <label for="chest-pain">Enter your chest pain type:</label>
+        <select id="chest-pain" name="chest-pain" required>
+          <option value="1">Typical Angina</option>
+          <option value="2">Atypical Angina</option>
+          <option value="3">Non-Anginal Pain</option>
+          <option value="4">Asymptomatic</option>
+        </select><br>
+        
+        <label for="blood-pressure">Enter your resting blood pressure (mm Hg):</label>
+        <input type="number" id="blood-pressure" name="blood-pressure" required><br>
+        
+        <label for="cholesterol">Enter your cholesterol level (mg/dL):</label>
+        <input type="number" id="cholesterol" name="cholesterol" required><br>
+        
+        <label for="blood-sugar">Enter your fasting blood sugar level:</label><br>
+        <input type="radio" id="bs-normal" name="blood-sugar" value="0" required>
+        <label for="bs-normal">Normal (&lt;120 mg/dL)</label><br>
+        <input type="radio" id="bs-high" name="blood-sugar" value="1" required>
+        <label for="bs-high">High (&ge;120 mg/dL)</label><br>
+        
+        <label for="ecg">Enter your resting ECG results:</label><br>
+        <input type="radio" id="ecg-normal" name="ecg" value="0" required>
+        <label for="ecg-normal">Normal</label><br>
+        <input type="radio" id="ecg-abnormal" name="ecg" value="1" required>
+        <label for="ecg-abnormal">ST-T wave abnormality</label><br>
+        <input type="radio" id="ecg-lvh" name="ecg" value="2" required>
+        <label for="ecg-lvh">Left ventricular hypertrophy</label><br>
+        
+        <label for="max-heart-rate">Enter your maximum heart rate achieved (bpm):</label>
+        <input type="number" id="max-heart-rate" name="max-heart-rate" required><br>
+        
+        <label for="exercise-angina">Do you experience exercise-induced angina?</label><br>
+        <input type="radio" id="angina-yes" name="exercise-angina" value="1" required>
+        <label for="angina-yes">Yes</label><br>
+        <input type="radio" id="angina-no" name="exercise-angina" value="0" required>
+        <label for="angina-no">No</label><br>
+        
+        <label for="st-depression">Enter your ST depression induced by exercise relative to rest:</label>
+        <input type="number" id="st-depression" name="st-depression" required><br>
+        
+        <label for="st-slope">Enter the slope of the peak exercise ST segment:</label><br>
+        <input type="radio" id="slope-up" name="st-slope" value="1" required>
+        <label for="slope-up">Upsloping</label><br>
+        <input type="radio" id="slope-flat" name="st-slope" value="2" required>
+        <label for="slope-flat">Flat</label><br>
+        <input type="radio" id="slope-down" name="st-slope" value="3" required>
+        <label for="slope-down">Downsloping</label><br><br>
+        
+        <input type="submit" value="Check Risk">
+      </form>
+</body>
+</html>
